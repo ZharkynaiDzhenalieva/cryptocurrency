@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/coinone-proxy"
+  to = "https://thingproxy.freeboard.io/fetch/https://api.coinone.co.kr/ticker?currency=all"
+  status = 200
+  force = true
+  headers = { X-From = "Netlify" }
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
