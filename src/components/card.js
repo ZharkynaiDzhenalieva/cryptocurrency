@@ -37,8 +37,8 @@ export default class Card extends Component {
             <span className="card-title">{this.props.coin.currency}</span>
 
             <ul className="card-content-list">
-              <li><label>NOW</label> : ₩{String(this.props.coin.last).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</li>
-              <li><label>-24H</label> : ₩{String(this.props.coin.yesterday_last).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</li>
+              <li><label>NOW</label> : ${String(this.props.coin.last).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</li>
+              <li><label>-24H</label> : ${String(this.props.coin.yesterday_last).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</li>
             </ul>
           </div>
           <div className="card-action">
